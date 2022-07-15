@@ -1,0 +1,189 @@
+.container-2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+#navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 24px;
+}
+#carousel {
+  flex: initial;
+  display: block;
+}
+
+#carousel {
+  overflow: hidden;
+  width: 800px;
+  height: 550px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.p-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+.p-wrapper img {
+  height: auto;
+  width: 700px;
+}
+
+#button_a:checked ~ #carousel .p-wrapper {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+#button_b:checked ~ #carousel .p-wrapper {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+#button_c:checked ~ #carousel .p-wrapper {
+  -webkit-transform: translateY(-200%);
+  transform: translateY(-200%);
+}
+
+#button_d:checked ~ #carousel .p-wrapper {
+  -webkit-transform: translateY(-300%);
+  transform: translateY(-300%);
+}
+#button_e:checked ~ #carousel .p-wrapper {
+  -webkit-transform: translateY(-400%);
+  transform: translateY(-400%);
+}
+#button_f:checked ~ #carousel .p-wrapper {
+  -webkit-transform: translateY(-500%);
+  transform: translateY(-500%);
+}
+#button_g:checked ~ #carousel .p-wrapper {
+  -webkit-transform: translateY(-600%);
+  transform: translateY(-600%);
+}
+#button_h:checked ~ #carousel .p-wrapper {
+  -webkit-transform: translateY(-700%);
+  transform: translateY(-700%);
+}
+#button_i:checked ~ #carousel .p-wrapper {
+  -webkit-transform: translateY(-800%);
+  transform: translateY(-800%);
+}
+
+[class^='panel_'] {
+  overflow: auto;
+  position: relative;
+  width: inherit;
+  height: inherit;
+  padding: 3rem;
+}
+
+[class^='label_'] {
+  display: block;
+  cursor: pointer;
+  margin: 8px 4px;
+  width: 200px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 4px;
+  color: #aaa;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+[class^='label_']:hover {
+  color: #444;
+  background-color: #d6d6d6;
+}
+
+#button_a:checked ~ #navigation .label_a,
+#button_b:checked ~ #navigation .label_b,
+#button_c:checked ~ #navigation .label_c,
+#button_d:checked ~ #navigation .label_d,
+#button_e:checked ~ #navigation .label_e,
+#button_f:checked ~ #navigation .label_f,
+#button_g:checked ~ #navigation .label_g,
+#button_h:checked ~ #navigation .label_h,
+#button_i:checked ~ #navigation .label_i {
+  cursor: default;
+  color: #fff;
+  background-color: #222;
+}
+
+@media only screen and (max-width: 1350px) {
+  .container-2 {
+    flex-direction: column;
+  }
+  #navigation {
+    margin-right: 0px;
+  }
+  [class^='label_'] {
+    margin: 5px 4px;
+    width: 300px;
+  }
+  #carousel {
+    width: 700px;
+    height: 450px;
+  }
+  .p-wrapper img {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 1046px) {
+  .container-2 {
+    flex-direction: column;
+  }
+  #navigation {
+    margin-right: 0px;
+  }
+  [class^='label_'] {
+    margin: 5px 4px;
+    width: 300px;
+  }
+  #carousel {
+    width: 600px;
+    height: 350px;
+  }
+  .p-wrapper img {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 635px) {
+  #carousel {
+    width: 500px;
+    height: 350px;
+  }
+  .p-wrapper img {
+    width: 400px;
+  }
+  [class^='panel_'] {
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 512px) {
+  #carousel {
+    width: 400px;
+    height: 350px;
+  }
+  .p-wrapper img {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 512px) {
+  #carousel {
+    width: 370px;
+    height: 350px;
+  }
+  .p-wrapper img {
+    width: 270px;
+  }
+}
