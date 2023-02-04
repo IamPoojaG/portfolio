@@ -364,6 +364,7 @@ form {
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  min-height: 100vh;
 }
 input,
 textarea {
@@ -376,7 +377,19 @@ textarea {
   font-weight: 800;
   width: 400px;
 }
-button {
+.contact-button {
+  width: 260px;
+  cursor: pointer;
+  background: #2768d9;
+  color: #fff;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.contact-button:hover {
+  background: rgb(247, 5, 46);
+}
+/* button {
   padding: 0.3rem 2rem;
   border-radius: 10px;
   border: none;
@@ -387,7 +400,7 @@ button {
 }
 button:hover {
   opacity: 0.8;
-}
+} */
 
 .social {
   display: flex;
